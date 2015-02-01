@@ -1,0 +1,124 @@
+# depslib dependency file v1.0
+1417963162 source:d:\project_codeblocks\offer\main.cpp
+	<iostream>
+	"utils.h"
+
+1417965386 d:\project_codeblocks\offer\utils.h
+	<iostream>
+
+1418198901 source:h:\offer\main.cpp
+	<iostream>
+	"utils.h"
+	"Pro3.h"
+
+1417965386 h:\offer\utils.h
+	<iostream>
+
+1418191736 source:h:\offer\pro3.cpp
+	"Pro3.h"
+
+1418199442 h:\offer\pro3.h
+
+1421393416 source:c:\users\zmzhang\desktop\offer\main.cpp
+	<iostream>
+	<cstring>
+	<memory>
+	"Pro22.h"
+
+1421130224 c:\users\zmzhang\desktop\offer\utils.h
+	<iostream>
+	<cstring>
+
+1418214639 c:\users\zmzhang\desktop\offer\pro3.h
+
+1418303373 source:c:\users\zmzhang\desktop\offer\pro4.cpp
+	"Pro4.h"
+	<iostream>
+	<cstring>
+
+1418302651 c:\users\zmzhang\desktop\offer\pro4.h
+
+1418361706 c:\users\zmzhang\desktop\offer\pro5.h
+	"utils.h"
+
+1419402149 source:c:\users\zmzhang\desktop\offer\fastsort.cpp
+	"fastSort.h"
+	<iostream>
+
+1418631136 c:\users\zmzhang\desktop\offer\fastsort.h
+
+1418797929 source:c:\users\zmzhang\desktop\offer\tmp.cpp
+	<iostream>
+	<stdio.h>
+
+1418693593 c:\users\zmzhang\desktop\offer\pro8.h
+
+1418699029 source:c:\users\zmzhang\desktop\offer\pro8.cpp
+	"Pro8.h"
+
+1418796449 source:c:\users\zmzhang\desktop\offer\pro9.cpp
+	"Pro9.h"
+
+1418778304 c:\users\zmzhang\desktop\offer\pro9.h
+
+1418883089 source:c:\users\zmzhang\desktop\offer\pro10.cpp
+	"Pro10.h"
+
+1418882826 c:\users\zmzhang\desktop\offer\pro10.h
+
+1419239958 source:c:\users\zmzhang\desktop\offer\pro11.cpp
+	"Pro11.h"
+
+1418951695 c:\users\zmzhang\desktop\offer\pro11.h
+
+1419319910 c:\users\zmzhang\desktop\offer\pro12.h
+	"utils.h"
+
+1419321279 source:c:\users\zmzhang\desktop\offer\pro12.cpp
+	<cstring>
+	"Pro12.h"
+	<iostream>
+
+1419302028 source:c:\users\zmzhang\desktop\offer\pro13.cpp
+	"Pro13.h"
+
+1419300619 c:\users\zmzhang\desktop\offer\pro13.h
+	"utils.h"
+
+1419404230 source:c:\users\zmzhang\desktop\offer\pro14.cpp
+	"Pro14.h"
+
+1419404313 c:\users\zmzhang\desktop\offer\pro14.h
+
+1419475350 c:\users\zmzhang\desktop\offer\pro15.h
+	"utils.h"
+
+1419839052 c:\users\zmzhang\desktop\offer\pro17.h
+
+1419840565 source:c:\users\zmzhang\desktop\offer\pro17.cpp
+	"Pro17.h"
+
+1419860082 source:c:\users\zmzhang\desktop\offer\dayafterday.cpp
+	"dayAfterday.h"
+	<iostream>
+
+1419859351 c:\users\zmzhang\desktop\offer\dayafterday.h
+
+1421119549 source:c:\users\zmzhang\desktop\offer\pro18.cpp
+	"Pro18.h"
+
+1421132220 c:\users\zmzhang\desktop\offer\pro18.h
+	"utils.h"
+
+1421132877 c:\users\zmzhang\desktop\offer\pro19.h
+	"utils.h"
+
+1421323716 c:\users\zmzhang\desktop\offer\pro20.h
+	<iostream>
+
+1421388001 c:\users\zmzhang\desktop\offer\pro21.h
+	"utils.h"
+
+1421393633 c:\users\zmzhang\desktop\offer\pro22.h
+	"utils.h"
+

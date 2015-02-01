@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="offer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/offer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/offer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Pro10.cpp" />
+		<Unit filename="Pro10.h" />
+		<Unit filename="Pro11.cpp" />
+		<Unit filename="Pro11.h" />
+		<Unit filename="Pro12.cpp" />
+		<Unit filename="Pro12.h" />
+		<Unit filename="Pro13.cpp" />
+		<Unit filename="Pro13.h" />
+		<Unit filename="Pro14.cpp" />
+		<Unit filename="Pro14.h" />
+		<Unit filename="Pro15.h" />
+		<Unit filename="Pro17.cpp" />
+		<Unit filename="Pro17.h" />
+		<Unit filename="Pro18.h" />
+		<Unit filename="Pro19.h" />
+		<Unit filename="Pro20.h" />
+		<Unit filename="Pro21.h" />
+		<Unit filename="Pro22.h" />
+		<Unit filename="Pro3.h" />
+		<Unit filename="Pro4.cpp" />
+		<Unit filename="Pro4.h" />
+		<Unit filename="Pro5.h" />
+		<Unit filename="Pro6.h" />
+		<Unit filename="Pro7.h" />
+		<Unit filename="Pro8.cpp" />
+		<Unit filename="Pro8.h" />
+		<Unit filename="Pro9.cpp" />
+		<Unit filename="Pro9.h" />
+		<Unit filename="dayAfterday.cpp" />
+		<Unit filename="dayAfterday.h" />
+		<Unit filename="fastSort.cpp" />
+		<Unit filename="fastSort.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="tmp.cpp" />
+		<Unit filename="utils.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
