@@ -1,17 +1,18 @@
 #include <iostream>
 #include <cstring>
 #include <memory>
-#include "Pro22.h"
+#include "Pro24.h"
 using namespace std;
 
 int main()
 {
-    int a[] = {1 , 2 , 3 , 4 , 5};
-    int b[] = {1 , 2 , 3 , 4 , 5};
-    Pro22<int> obp;
-    if(obp.judge(a , b , 5)){
-        cout<<"true"<<endl;
-    }
-    else
-        cout<<"false"<<endl;
+    Pro24 obp;
+    int values1[] = {5 , 7 , 6 , 9 , 11 , 10 , 8};
+    int values2[] = {7 , 4 , 6 , 5};
+
+    if(obp.judgeSort(values2 , 4))
+        cout<<"yes";
+    else cout<<"no";
+
+
 }
