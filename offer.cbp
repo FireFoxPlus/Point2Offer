@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="FlashBackStack.h" />
 		<Unit filename="Pro10.cpp" />
 		<Unit filename="Pro10.h" />
 		<Unit filename="Pro11.cpp" />
@@ -53,6 +54,8 @@
 		<Unit filename="Pro23.h" />
 		<Unit filename="Pro24.cpp" />
 		<Unit filename="Pro24.h" />
+		<Unit filename="Pro25.cpp" />
+		<Unit filename="Pro25.h" />
 		<Unit filename="Pro3.h" />
 		<Unit filename="Pro4.cpp" />
 		<Unit filename="Pro4.h" />

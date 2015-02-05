@@ -111,10 +111,10 @@ public :
         return temp;
 }
 //删除节点，从头部
-    T headDel(){
+    T& headDel(){
         if(length == 0){
             cout<<"链表为空"<<endl;
-            return -1;
+            //return -1;
         }
         snode<T> *temp = head;
         T rs = temp->getValue();
@@ -125,6 +125,19 @@ public :
     }
 
     snode<T>* listReverse();
+
+    //打印链表
+    void print(){
+        if(head == NULL)
+            return;
+        snode<T>* tmp = head;
+        while(tmp != tail && tmp != NULL){
+            cout<<tmp->getValue()<<' ';
+            tmp = tmp->getNext();
+        }
+        if(tmp != NULL)
+            cout<<tmp->getValue()<<endl;
+    }
 
 private :
     int length;
@@ -174,12 +187,14 @@ public :
     slist<T> getStorage(){
         return storage;
     }
+    void print(){
+        storage.print();
+    }
 
 private :
     slist<T> storage;
 };
 
-//双向链表
 //队列，队首入队，队尾出队
 template<typename T>
 class mqueue{
@@ -196,6 +211,9 @@ public :
     }
     slist<T> getStorage(){
         return storage;
+    }
+    void print(){
+        storage.print();
     }
 private :
     slist<T> storage;
