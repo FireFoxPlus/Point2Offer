@@ -15,7 +15,6 @@ void Pro25::PrintSumPath(bnode<int> *root , int sum)
     bnode<int> *tmp;
     while(cur >= 0)
     {
-
         tmp = visits[cur];
         if(flag[cur] == 0)
         {

@@ -1,14 +1,23 @@
 #include <iostream>
 #include <cstring>
 #include <memory>
-#include "Pro25.h"
+#include "Pro27.h"
+
 using namespace std;
 
 int main()
 {
-    Pro25 obp;
-    int values1[] = {1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9};
-    btree<int> tree(values1 , 9);
-    bnode<int>* root = tree.getRoot();
-    obp.PrintSumPath(root , 3);
+    int values[] = {5 , 3 , 7 , 2 , 4 , 6 , 8};
+    btree<int> tree(values , 7);
+    Pro27 obp;
+    bnode<int> *head = obp.getLeftMost(tree.getRoot());
+    obp.tree2List(tree.getRoot());
+    int counts = 0;
+    while(counts < 7)
+    {
+        cout<<head->getValue();
+        head = head->getRight();
+        counts++;
+    }
+
 }

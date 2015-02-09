@@ -56,6 +56,11 @@
 		<Unit filename="Pro24.h" />
 		<Unit filename="Pro25.cpp" />
 		<Unit filename="Pro25.h" />
+		<Unit filename="Pro27,h.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Pro27.cpp" />
+		<Unit filename="Pro27.h" />
 		<Unit filename="Pro3.h" />
 		<Unit filename="Pro4.cpp" />
 		<Unit filename="Pro4.h" />
