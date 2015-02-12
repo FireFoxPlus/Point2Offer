@@ -45,3 +45,27 @@ void Pro27::tree2List(bnode<int> *root)
     if(root->getLeft() == NULL && root->getRight() == NULL)
         return;
 }
+
+void Pro27::tree2List2(bnode<int> *root)
+{
+    bnode<int> *lastNodeInList = NULL;
+    ConvertNode(root , &lastNodeInList);
+}
+
+void Pro27::ConvertNode(bnode<int> *root , bnode<int> **lastNodeInList)
+{
+    if(root == NULL)
+        return;
+
+    if(root->getLeft() != NULL)
+        ConvertNode(root->getLeft() , lastNodeInList);
+
+    root->setLeft(*lastNodeInList);
+    if((*lastNodeInList) != NULL)
+        (*lastNodeInList)->setRight(root);
+    *lastNodeInList = root;
+
+    if(root->getRight() != NULL)
+        ConvertNode(root->getRight() , lastNodeInList);
+}
+

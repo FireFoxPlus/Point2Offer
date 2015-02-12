@@ -4,6 +4,7 @@ template<typename T>
 class Pro26{
 public :
     Complex_listNode<T>* getCopy();
+    void fixSibling();
     void mcopy();
     Complex_listNode<T>* split();
 private :
@@ -14,8 +15,23 @@ template<typename T>
 Complex_listNode<T>* Pro26<T>::getCopy()
 {
     mcopy();
+    fixSibling();
     Complex_listNode<T>* copy_head = split();
     return copy_head;
+}
+
+template<typename T>
+void Pro26<T>::fixSibling()
+{
+    Complex_listNode<T> *tmp = head;
+    bool isCopy = false;
+    while(tmp != NULL)
+    {
+        if(isCopy && tmp->getSibling() != NULL)
+            tmp->getSibling() = tmp->getSibling()->getNext();
+        tmp = tmp->getNext();
+        isCopy = !isCopy;
+    }
 }
 
 template<typename T>

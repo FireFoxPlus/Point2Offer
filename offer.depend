@@ -226,3 +226,97 @@
 
 1423462687 e:\point2offer_l\point2offer\complex_list.h
 
+1423705812 source:e:\point2offer_local_zz\point2offer\dayafterday.cpp
+	"dayAfterday.h"
+	<iostream>
+
+1423705812 e:\point2offer_local_zz\point2offer\dayafterday.h
+
+1423705812 source:e:\point2offer_local_zz\point2offer\fastsort.cpp
+	"fastSort.h"
+	<iostream>
+
+1423705812 e:\point2offer_local_zz\point2offer\fastsort.h
+
+1423705812 source:e:\point2offer_local_zz\point2offer\main.cpp
+	<iostream>
+	<cstring>
+	<memory>
+	"Pro27.h"
+
+1423711629 e:\point2offer_local_zz\point2offer\pro27.h
+	"utils.h"
+
+1423705812 e:\point2offer_local_zz\point2offer\utils.h
+	<iostream>
+	<cstring>
+
+1423705812 source:e:\point2offer_local_zz\point2offer\pro10.cpp
+	"Pro10.h"
+
+1423705812 e:\point2offer_local_zz\point2offer\pro10.h
+
+1423705812 source:e:\point2offer_local_zz\point2offer\pro11.cpp
+	"Pro11.h"
+
+1423705812 e:\point2offer_local_zz\point2offer\pro11.h
+
+1423705812 source:e:\point2offer_local_zz\point2offer\pro12.cpp
+	<cstring>
+	"Pro12.h"
+	<iostream>
+
+1423705812 e:\point2offer_local_zz\point2offer\pro12.h
+	"utils.h"
+
+1423705812 source:e:\point2offer_local_zz\point2offer\pro13.cpp
+	"Pro13.h"
+
+1423705812 e:\point2offer_local_zz\point2offer\pro13.h
+	"utils.h"
+
+1423705812 source:e:\point2offer_local_zz\point2offer\pro14.cpp
+	"Pro14.h"
+
+1423705812 e:\point2offer_local_zz\point2offer\pro14.h
+
+1423705812 source:e:\point2offer_local_zz\point2offer\pro17.cpp
+	"Pro17.h"
+
+1423705812 e:\point2offer_local_zz\point2offer\pro17.h
+
+1423705812 source:e:\point2offer_local_zz\point2offer\pro24.cpp
+	"Pro24.h"
+
+1423705812 e:\point2offer_local_zz\point2offer\pro24.h
+
+1423705812 source:e:\point2offer_local_zz\point2offer\pro25.cpp
+	"Pro25.h"
+
+1423705812 e:\point2offer_local_zz\point2offer\pro25.h
+	"utils.h"
+
+1423705812 source:e:\point2offer_local_zz\point2offer\pro27.cpp
+	"Pro27.h"
+
+1423705812 source:e:\point2offer_local_zz\point2offer\pro4.cpp
+	"Pro4.h"
+	<iostream>
+	<cstring>
+
+1423705812 e:\point2offer_local_zz\point2offer\pro4.h
+
+1423705812 source:e:\point2offer_local_zz\point2offer\pro8.cpp
+	"Pro8.h"
+
+1423705812 e:\point2offer_local_zz\point2offer\pro8.h
+
+1423705812 source:e:\point2offer_local_zz\point2offer\pro9.cpp
+	"Pro9.h"
+
+1423705812 e:\point2offer_local_zz\point2offer\pro9.h
+
+1423705812 source:e:\point2offer_local_zz\point2offer\tmp.cpp
+	<iostream>
+	<stdio.h>
+
