@@ -1,10 +1,12 @@
-#ifndef _UTILS_H
-#define _UTILS_H
-#endif
+#define UTILS_H
 
 #include <iostream>
 #include <cstring>
 using namespace std;
+
+bool small(int val1 , int val2);
+void mswap(int *val1 , int *val2);
+int getRandom(int range);
 
 //单链表节点
 template<typename T>
@@ -436,7 +438,6 @@ public :
         }
         cout<<' ';
     }
-
 private :
     char *num;
     int length;

@@ -1,6 +1,6 @@
 #include "Pro29.h"
 #include "fastSort.h"
-
+#include <iostream>
 int Pro29::MoreThanHalf_1()
 {
     int value , counts = 0;
@@ -17,8 +17,10 @@ int Pro29::MoreThanHalf_1()
 }
 //既然超过一半，那么将数组排序，那么出现次数超过一半的数字
 //一定在n/2的位置上，也就是说，是第n/2大的数字
-int Pro29::MoreThanHalf_2(int * value , int length_ , int goal)
+int Pro29::MoreThanHalf_2(int* value , int length_ , int goal)
 {
+    if(length_ <= 0 || value == NULL)
+        return -1;
     int rs;
     int part = partion(value , length_);
 

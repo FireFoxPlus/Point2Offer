@@ -64,6 +64,8 @@
 		<Unit filename="Pro29.cpp" />
 		<Unit filename="Pro29.h" />
 		<Unit filename="Pro3.h" />
+		<Unit filename="Pro30.cpp" />
+		<Unit filename="Pro30.h" />
 		<Unit filename="Pro4.cpp" />
 		<Unit filename="Pro4.h" />
 		<Unit filename="Pro5.h" />
@@ -79,6 +81,7 @@
 		<Unit filename="fastSort.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="tmp.cpp" />
+		<Unit filename="utils.cpp" />
 		<Unit filename="utils.h" />
 		<Extensions>
 			<code_completion />

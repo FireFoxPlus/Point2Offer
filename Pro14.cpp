@@ -1,4 +1,7 @@
 #include "Pro14.h"
+#ifndef UTILS_H
+#include "utils.h"
+#endif // UTILS_H
 //将奇数置于偶数之前
 void Pro14::swapOdd(int *values , int length , Judge judge)
 {
@@ -12,11 +15,7 @@ void Pro14::swapOdd(int *values , int length , Judge judge)
                 continue;
             }
         else
-        {
-            int  tmp = values[pre];
-            values[pre] = values[tail];
-            values[tail] = tmp;
-        }
+            mswap(&values[pre] , &values[tail]);
     }
 }
 //是否是奇数

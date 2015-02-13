@@ -1,21 +1,9 @@
 #include "fastSort.h"
 #include <iostream>
-#include <time.h>
-#include <stdlib.h>
 
-int getRandom(int range)
-{
-    srand((int)time(NULL));
-    int rs = rand();
-    return rs % range;
-}
-
-void mswap(int *val1 , int * val2)
-{
-    int tmp = *val1;
-    *val1 = *val2;
-    *val2 = tmp;
-}
+#ifndef UTILS_H
+#include "utils.h"
+#endif // UTILS_H
 
 //返回的是数组下标
 int partion(int *values , int length)

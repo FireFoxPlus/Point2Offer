@@ -232,25 +232,24 @@
 
 1423705812 e:\point2offer_local_zz\point2offer\dayafterday.h
 
-1423795524 source:e:\point2offer_local_zz\point2offer\fastsort.cpp
+1423824795 source:e:\point2offer_local_zz\point2offer\fastsort.cpp
 	"fastSort.h"
 	<iostream>
-	<time.h>
-	<stdlib.h>
+	"utils.h"
 
-1423795300 e:\point2offer_local_zz\point2offer\fastsort.h
+1423824558 e:\point2offer_local_zz\point2offer\fastsort.h
 
-1423796389 source:e:\point2offer_local_zz\point2offer\main.cpp
+1423824754 source:e:\point2offer_local_zz\point2offer\main.cpp
 	<iostream>
 	<cstring>
 	<memory>
-	"Pro29.h"
-	"fastSort.h"
+	"utils.h"
+	"Pro30.h"
 
 1423728252 e:\point2offer_local_zz\point2offer\pro27.h
 	"utils.h"
 
-1423728789 e:\point2offer_local_zz\point2offer\utils.h
+1423824817 e:\point2offer_local_zz\point2offer\utils.h
 	<iostream>
 	<cstring>
 
@@ -278,8 +277,9 @@
 1423727932 e:\point2offer_local_zz\point2offer\pro13.h
 	"utils.h"
 
-1423727519 source:e:\point2offer_local_zz\point2offer\pro14.cpp
+1423825095 source:e:\point2offer_local_zz\point2offer\pro14.cpp
 	"Pro14.h"
+	"utils.h"
 
 1423727937 e:\point2offer_local_zz\point2offer\pro14.h
 
@@ -332,7 +332,21 @@
 
 1423730115 e:\point2offer_local_zz\point2offer\pro29.h
 
-1423796670 source:e:\point2offer_local_zz\point2offer\pro29.cpp
+1423810778 source:e:\point2offer_local_zz\point2offer\pro29.cpp
 	"Pro29.h"
 	"fastSort.h"
+	<iostream>
+
+1423824527 e:\point2offer_local_zz\point2offer\pro30.h
+
+1423824971 source:e:\point2offer_local_zz\point2offer\pro30.cpp
+	"Pro30.h"
+	"fastSort.h"
+	"utils.h"
+	<iostream>
+
+1423824696 source:e:\point2offer_local_zz\point2offer\utils.cpp
+	"utils.h"
+	<time.h>
+	<stdlib.h>
 
