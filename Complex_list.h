@@ -1,5 +1,6 @@
 template<typename T>
-class Complex_listNode{
+class Complex_listNode
+{
 public :
     Complex_listNode()
     {

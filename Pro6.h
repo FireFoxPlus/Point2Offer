@@ -1,20 +1,25 @@
 #include "utils.h"
 template<typename T>
-class Pro6{
+class Pro6
+{
 public :
     Pro6(T *tpre , T * tmiddle , int tlength);
     bnode<T> * rebuild(T* startpre , T* endpre , T *startmid , T *endmid);
     int finds(T *values , T target);
-    bnode<T> * getRoot(){
+    bnode<T> * getRoot()
+    {
         return root;
-        }
-    void setRoot(bnode<T> *troot){
+    }
+    void setRoot(bnode<T> *troot)
+    {
         root = troot;
     }
-    T* getPre(){
+    T* getPre()
+    {
         return pre;
-        }
-    T* getMid(){
+    }
+    T* getMid()
+    {
         return middle;
     }
 private :
@@ -24,9 +29,9 @@ private :
     bnode<T> *root;
 };
 
-
 template<typename T>
-Pro6<T>::Pro6(T *tpre , T * tmiddle , int tlength){
+Pro6<T>::Pro6(T *tpre , T * tmiddle , int tlength)、
+{
     pre = tpre;
     middle = tmiddle;
     root = NULL;
@@ -34,7 +39,8 @@ Pro6<T>::Pro6(T *tpre , T * tmiddle , int tlength){
 }
 
 template<typename T>
-bnode<T> * Pro6<T>::rebuild(T* startpre , T* endpre , T* startmid , T* endmid){
+bnode<T> * Pro6<T>::rebuild(T* startpre , T* endpre , T* startmid , T* endmid)
+{
         bnode<T> *root = new bnode<T>(startpre[0]);
         bnode<T> *left = NULL;
         bnode<T> *right = NULL;
@@ -51,13 +57,14 @@ bnode<T> * Pro6<T>::rebuild(T* startpre , T* endpre , T* startmid , T* endmid){
 }
 
 template<typename T>
-int Pro6<T>::finds(T *values , T target){
+int Pro6<T>::finds(T *values , T target)
+{
     int n = 0;
-    while(true){
+    while(true)
+    {
         if(values[n] == target)
             break;
         n++;
     }
     return n;
-
 }

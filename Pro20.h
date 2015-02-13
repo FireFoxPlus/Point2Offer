@@ -1,9 +1,11 @@
 #include<iostream>
 using namespace std;
 template<int n>
-class Pro20{
+class Pro20
+{
 public :
-    Pro20(int (*p)[n]){
+    Pro20(int (*p)[n])
+    {
         Uheight = 0;
         Dheight = n - 1;
         Lwidth = 0;
@@ -18,20 +20,24 @@ private :
 };
 
 template<int n>
-void Pro20<n>::output(){
+void Pro20<n>::output()
+{
     int counts = 0;
     int CH = 0, CW = 0;
-    while(counts < n * n){
+    while(counts < n * n)
+    {
         //右
-        for(CW = Lwidth; CW <= Rwidth ; CW++){
+        for(CW = Lwidth; CW <= Rwidth ; CW++)
+        {
             cout<<value[CH][CW]<<' ';
             counts++;
-            }
+        }
         CW -= 1;
         Uheight++;
 
         //下
-        for(CH = Uheight; CH <= Dheight; CH++){
+        for(CH = Uheight; CH <= Dheight; CH++)
+        {
             cout<<value[CH][CW]<<' ';
             counts++;
         }
@@ -39,7 +45,8 @@ void Pro20<n>::output(){
         Rwidth--;
 
         //左
-        for(CW = Rwidth; CW >= Lwidth; CW--){
+        for(CW = Rwidth; CW >= Lwidth; CW--)
+        {
             cout<<value[CH][CW]<<' ';
             counts++;
         }
@@ -47,11 +54,12 @@ void Pro20<n>::output(){
         Dheight--;
 
         //上
-        for(CH = Dheight; CH >= Uheight; CH--){
+        for(CH = Dheight; CH >= Uheight; CH--)
+        {
             cout<<value[CH][CW]<<' ';
             counts++;
         }
         CH += 1;
         Lwidth++;
-        }
+    }
 }

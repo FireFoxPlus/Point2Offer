@@ -1,6 +1,7 @@
 #include "Pro11.h"
 
-double Pro11::power(double base , int ex){
+double Pro11::power(double base , int ex)
+{
     if(0 == base)
         return 0;
     if(0 == base && ex < 0)
@@ -10,7 +11,8 @@ double Pro11::power(double base , int ex){
     int counts = 1;
     double rs = base;
     int exs = ex > 0 ? ex : -ex;
-    while(counts < exs){
+    while(counts < exs)
+    {
         rs = rs * base;
         counts++;
     }

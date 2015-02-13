@@ -3,14 +3,16 @@
 
 using namespace std;
 
-bool isLeapYear(int year){
+bool isLeapYear(int year)
+{
     bool rs = false;
     if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
         rs = true;
     return rs;
 }
 
-void whichDay(){
+void whichDay()
+{
     int year , month , day , whichArry;
     int dayAfter;
     cout<<"year"<<endl;
@@ -29,8 +31,10 @@ void whichDay(){
     cin>>dayAfter;
     day += dayAfter;
 
-    while(day > days[whichArry][month]){
-         if(month == 12){
+    while(day > days[whichArry][month])
+    {
+         if(month == 12)
+         {
             day -= days[whichArry][month];
             month = 1;
             year += 1;
@@ -39,11 +43,11 @@ void whichDay(){
             else
                 whichArry = 1;
         }
-        else{
+        else
+        {
             day -= days[whichArry][month];
             month++;
         }
     }
     cout<<year<<'/'<<month<<'/'<<day<<endl;
-
 }

@@ -1,6 +1,7 @@
 #include "Pro9.h"
 
-int Pro9::fibo_1(int num){
+int Pro9::fibo_1(int num)
+{
     int pre1 , pre2 , rs;
     if(num == 0)
         return 0;
@@ -9,7 +10,8 @@ int Pro9::fibo_1(int num){
     else
     {
         int i = 0;
-        while(i <= num){
+        while(i <= num)
+        {
             if(i == 0)
                 pre1 = 0;
             else if(i == 1)
@@ -24,5 +26,4 @@ int Pro9::fibo_1(int num){
         }
     }
     return rs;
-
 }

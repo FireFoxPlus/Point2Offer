@@ -1,15 +1,18 @@
 #include "Pro4.h"
 #include <iostream>
 #include <cstring>
-Pro4::Pro4(char *str){
+Pro4::Pro4(char *str)
+{
     values = str;
 }
-char* Pro4::mreplace(){
+char* Pro4::mreplace()
+{
         char *rs = NULL;
         int itr = 0 , counts = 0;;
         if(values == NULL)
             return NULL;
-        while(values[itr] != '\0'){
+        while(values[itr] != '\0')
+        {
             if(values[itr] == ' ')
                 counts++;
             itr++;
@@ -20,13 +23,16 @@ char* Pro4::mreplace(){
         char *p1;
         p1 = rs + length - 1;
         itr = strlen(values) - 1;
-        while(itr >= 0){
-            if(values[itr] != ' '){
+        while(itr >= 0)
+        {
+            if(values[itr] != ' ')
+            {
                 *p1 = values[itr];
                 p1--;
                 itr--;
             }
-            else{
+            else
+            {
                 *p1 = '0';
                 p1--;
                 *p1 = '2';
@@ -34,7 +40,7 @@ char* Pro4::mreplace(){
                 *p1 = '%';
                 p1--;
                 itr--;
-                }
             }
-            return rs;
         }
+        return rs;
+}

@@ -1,7 +1,8 @@
 #include "Complex_list.h"
 
 template<typename T>
-class Pro26{
+class Pro26
+{
 public :
     Complex_listNode<T>* getCopy();
     void fixSibling();

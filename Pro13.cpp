@@ -1,6 +1,7 @@
 #include "Pro13.h"
 
-int Pro13::delO1(snode<int> *head , snode<int> *del){
+int Pro13::delO1(snode<int> *head , snode<int> *del)
+{
     int rs;
     snode<int> *next , *next_next;
     next = del->getNext();

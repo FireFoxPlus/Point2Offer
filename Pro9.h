@@ -1,4 +1,5 @@
-class Pro9{
+class Pro9
+{
 public :
     int fibo_1(int num);
     int fibo_2();

@@ -1,6 +1,7 @@
 #include "utils.h"
 template<typename T>
-class Pro7{
+class Pro7
+{
 public :
     void appendTail(T tvalue);
     T deleteHead();
@@ -10,25 +11,27 @@ private :
 };
 
 template<typename T>
-void Pro7<T>::appendTail(T tvalue){
+void Pro7<T>::appendTail(T tvalue)
+{
     in.push(tvalue);
 }
 
 template<typename T>
-T Pro7<T>::deleteHead(){
+T Pro7<T>::deleteHead()
+{
     T rs;
     if(out.getLength() != 0)
         rs = out.pop();
-    else if(in.getLength() != 0){
-        while(in.getLength() != 0){
+    else if(in.getLength() != 0)
+    {
+        while(in.getLength() != 0)
             out.push(in.pop());
-        }
         rs = out.pop();
     }
-    else{
+    else
+    {
         cout<<"╤сапн╙©у";
         return -1;
     }
     return rs;
-
 }

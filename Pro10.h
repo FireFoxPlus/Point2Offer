@@ -1,4 +1,5 @@
-class Pro10{
+class Pro10
+{
 public :
     int numOfOne(int num);
     int numOfOne2(int num);

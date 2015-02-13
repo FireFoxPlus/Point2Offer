@@ -1,5 +1,6 @@
 #include <cstring>
-class Pro28{
+class Pro28
+{
 public :
     Pro28(char *value)
     {

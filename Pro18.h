@@ -1,13 +1,15 @@
 #include "utils.h"
 template<typename T>
-class Pro18{
+class Pro18
+{
 public :
     bool BFS(bnode<T>* froot , bnode<T>* croot);
     bool isChild(bnode<T> *froot , bnode<T>* croot);
 };
 
 template<typename T>
-bool Pro18<T>::BFS(bnode<T>* froot , bnode<T>* croot){
+bool Pro18<T>::BFS(bnode<T>* froot , bnode<T>* croot)
+{
     bool left , right , rs = false;
     //cout<<froot->getValue()<<"!!"<<endl;
     mqueue<bnode<T>* > que;
@@ -15,14 +17,16 @@ bool Pro18<T>::BFS(bnode<T>* froot , bnode<T>* croot){
         que.addQueue(froot);
 
     bnode<T>* tmp = NULL;
-    while(que.getLength() != 0 ){
+    while(que.getLength() != 0)
+    {
         tmp = que.deQueue();
         if(tmp->getLeft() != NULL)
             que.addQueue(tmp->getLeft());
         if(tmp->getRight() != NULL)
             que.addQueue(tmp->getRight());
 
-        if(tmp->getValue() == croot->getValue()){
+        if(tmp->getValue() == croot->getValue())
+        {
             left = isChild(tmp->getLeft() , croot->getLeft());
             right = isChild(tmp->getRight() , croot->getRight());
             rs = left && right;
@@ -32,11 +36,12 @@ bool Pro18<T>::BFS(bnode<T>* froot , bnode<T>* croot){
 
         if(rs)
             break;
-        }
-        return rs;
     }
+    return rs;
+}
 template<typename T>
-bool Pro18<T>::isChild(bnode<T> *froot , bnode<T>* croot){
+bool Pro18<T>::isChild(bnode<T> *froot , bnode<T>* croot)
+{
     if(croot == NULL)
         return true;
 

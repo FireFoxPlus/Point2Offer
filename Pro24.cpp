@@ -1,8 +1,10 @@
 #include "Pro24.h"
 
-int Pro24::leftTree(int* start , int* ends , int rootValue){
+int Pro24::leftTree(int* start , int* ends , int rootValue)
+{
     int counts = 0;
-    while(start[counts] < rootValue){
+    while(start[counts] < rootValue)
+    {
         counts++;
         if(counts >= ends - start)
             break;
@@ -10,21 +12,25 @@ int Pro24::leftTree(int* start , int* ends , int rootValue){
     return counts;
 }
 
-bool Pro24::rightTree(int* start , int* ends , int rootValue){
+bool Pro24::rightTree(int* start , int* ends , int rootValue)
+{
     bool rs = true;
     if(ends == start)
         return true;
-    while(start <= ends){
+    while(start <= ends)
+    {
         if(*start > rootValue)
             start++;
-        else{
+        else
+        {
             rs = false;
             break;
         }
     }
     return rs;
 }
-bool Pro24::judgeSort(int *values , int length){
+bool Pro24::judgeSort(int *values , int length)
+{
     if(length == 0)
         return true;
     int rightStart = leftTree(&values[0] , &values[length - 1] , values[length - 1]);

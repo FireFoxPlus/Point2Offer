@@ -1,4 +1,5 @@
-class Pro4{
+class Pro4
+{
 public :
     Pro4(char *str);
     char* mreplace();

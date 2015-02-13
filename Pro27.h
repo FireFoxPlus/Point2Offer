@@ -1,5 +1,6 @@
 #include "utils.h"
-class Pro27{
+class Pro27
+{
 public :
     bnode<int> *getLeftMost(bnode<int> *root);
     bnode<int> *getRightMost(bnode<int> *root);
