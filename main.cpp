@@ -5,14 +5,15 @@
 #include "utils.h"
 #endif // UTILS_H
 
-#include "Pro30.h"
+#include "Pro31.h"
 
 
 using namespace std;
 
 int main()
 {
-    int a[] = {3 , 3 , 3 , 4 , 3 , 2 , 2 , 3};
-    Pro30 obp(a , 8);
-    obp.foundMinK_2(a , 8 , 7 , small);
+    int a[] = {1 , -2 , 3 , 10 , -4 , 7 , 2 , -5};
+    Pro31 obp;
+    cout<<obp.MaxSub(a , 8)<<endl;
+    cout<<obp.MaxInN(a , 8 , 8);
 }
