@@ -47,3 +47,8 @@ int getRandom(int range)
     int rs = rand();
     return rs % range;
 }
+
+int mmin(int val1 , int val2)
+{
+    return val1 < val2 ? val1 : val2;
+}

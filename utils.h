@@ -9,6 +9,7 @@ void mswap(int *val1 , int *val2);
 int getRandom(int range);
 int arrayToInt(char *rs);
 int nDigits(int val);
+int mmin(int val1 , int val2);
 
 //单链表节点
 template<typename T>
