@@ -4,7 +4,30 @@
 
 #include <time.h>
 #include <stdlib.h>
-//val1´óÓÚval2·µ»Øtrue
+
+int nDigits(int val)
+{
+    int rs = 0;
+    while(val > 0)
+    {
+        rs++;
+        val /= 10;
+    }
+    return rs;
+}
+
+int arrayToInt(char *rs)
+{
+    int int_rs = 0;
+    while(*rs != '\0')
+    {
+        int_rs = int_rs * 10 + *rs - '0';
+        rs++;
+    }
+    return int_rs;
+}
+
+//val1å¤§äºŽval2è¿”å›žtrue
 bool small(int val1 , int val2)
 {
     return val1 > val2 ? true : false;

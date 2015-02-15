@@ -5,15 +5,17 @@
 #include "utils.h"
 #endif // UTILS_H
 
-#include "Pro31.h"
+#include <cstring>
+#include "Pro33.h"
 
 
 using namespace std;
 
 int main()
 {
-    int a[] = {1 , -2 , 3 , 10 , -4 , 7 , 2 , -5};
-    Pro31 obp;
-    cout<<obp.MaxSub(a , 8)<<endl;
-    cout<<obp.MaxInN(a , 8 , 8);
+    int a[] = {3 , 32 , 321};
+    int b[] = {4 , 5 , 3 , 1 , 2};
+    Pro33 obp;
+    obp.getMinsInArray_2(b , 5);
+    cout<<obp.getMins();
 }

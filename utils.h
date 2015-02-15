@@ -7,6 +7,8 @@ using namespace std;
 bool small(int val1 , int val2);
 void mswap(int *val1 , int *val2);
 int getRandom(int range);
+int arrayToInt(char *rs);
+int nDigits(int val);
 
 //单链表节点
 template<typename T>
