@@ -6,13 +6,14 @@
 #endif // UTILS_H
 
 #include <cstring>
-#include "Pro34.h"
+#include "Pro35.h"
 
 
 using namespace std;
 
 int main()
 {
-    Pro34 obp;
-    obp.findUglyNum();
+    Pro35 obp;
+    char *a = "abaaa";
+    obp.firstOnce(a);
 }
