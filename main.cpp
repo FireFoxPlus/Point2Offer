@@ -4,13 +4,17 @@
 #ifndef UTILS_H
 #include "utils.h"
 #endif // UTILS_H
-#include "Pro41.h"
+#include "Pro42.h"
 
 using namespace std;
 
 int main()
 {
-   // int a[] = {1 , 1 , 2 , 2 , 3 , 4 , 5 , 5 , 6 , 6};
-    Pro41 obp;
-    obp.seqSum(15);
+    char str[] = "abcdefg";
+    Pro42 obp;
+    obp.leftReverse(str , 7 , 2);
+    for(int i = 0; i < 7; i++)
+        cout<<str[i];
+
+
 }
