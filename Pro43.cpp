@@ -39,8 +39,11 @@ int *Pro43::getPossi_2(int counts)
     }
     for(int i = 2; i <= counts; i++)
     {
-        for(int j = 1; j <= 6 * i; j++)
+        for(int k = 0; k < i; k++)
+            (vals[flag])[0] = 0;
+        for(int j = i; j <= 6 * i; j++)
         {
+            (val1s[flag])[j] = 0;
             for(int k = 1; k <= 6; k++)
             {
                 if(j - k > 0)
