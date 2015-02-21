@@ -239,12 +239,12 @@
 
 1423824558 e:\point2offer_local_zz\point2offer\fastsort.h
 
-1424344356 source:e:\point2offer_local_zz\point2offer\main.cpp
+1424482392 source:e:\point2offer_local_zz\point2offer\main.cpp
 	<iostream>
 	<cstring>
 	<memory>
 	"utils.h"
-	"Pro43.h"
+	"Pro44.h"
 
 1423728252 e:\point2offer_local_zz\point2offer\pro27.h
 	"utils.h"
@@ -412,10 +412,17 @@
 	"Pro42.h"
 	<cstring>
 
-1424344634 source:e:\point2offer_local_zz\point2offer\pro43.cpp
+1424481254 source:e:\point2offer_local_zz\point2offer\pro43.cpp
 	"Pro43.h"
 	<math.h>
 	<string.h>
 
 1424343903 e:\point2offer_local_zz\point2offer\pro43.h
+
+1424482050 e:\point2offer_local_zz\point2offer\pro44.h
+
+1424482532 source:e:\point2offer_local_zz\point2offer\pro44.cpp
+	"Pro44.h"
+	"fastSort.h"
+	<iostream>
 

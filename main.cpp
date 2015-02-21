@@ -4,14 +4,16 @@
 #ifndef UTILS_H
 #include "utils.h"
 #endif // UTILS_H
-#include "Pro43.h"
+#include "Pro44.h"
 
 using namespace std;
 
 int main()
 {
-    Pro43 obp;
-    int *rs = obp.getPossi_2(2);
-    for(int i = 1; i <= 12; i++)
-        cout<<rs[i]<<endl;
+    Pro44 obp;
+    int a[] = {0,0,4,5,9};
+    if(obp.isStraight(a))
+        cout<<"straight";
+    else
+        cout<<"not";
 }
