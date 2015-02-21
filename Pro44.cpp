@@ -12,6 +12,8 @@ bool Pro44::isStraight(int *vals , int length)
     {
         if(vals[i] == 0)
             countZero++;
+        if(i != 0 && vals[i - 1] == vals[i])
+            return false;
         if(i != 0 && vals[i - 1] != 0)
             countMis += vals[i] - vals[i - 1] - 1;
     }
