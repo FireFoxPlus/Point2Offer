@@ -1,3 +1,5 @@
+//字符串的排列
+//输入一个字符串，输出该字符串的全排列
 #include <cstring>
 class Pro28
 {

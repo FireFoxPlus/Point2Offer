@@ -1,3 +1,5 @@
+//链表中倒数第K个节点
+//题目：输入一个链表，输出该链表的第K个节点
 #include "utils.h"
 template<typename T>
 class Pro15

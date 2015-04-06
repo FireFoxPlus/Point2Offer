@@ -1,3 +1,4 @@
+//两个链表的第一个公共节点
 #ifndef UTILS_H
 #include "utils.h"
 #endif // UTILS_H

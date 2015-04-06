@@ -1,3 +1,5 @@
+//从尾到头打印链表
+//输入一个链表的头节点，从尾到头打印每个节点
 #include "utils.h"
 template<typename T>
 class Pro5

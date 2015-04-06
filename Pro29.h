@@ -1,3 +1,5 @@
+//数组中出现超过一半的数字
+//数组中有一个数字出现次数超过数组长度一半，找出这个数字
 class Pro29{
 public :
     Pro29(int *value , int length_)

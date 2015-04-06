@@ -1,3 +1,5 @@
+//重建二叉树
+//输入二叉树的前中序遍历，请重建出二叉树，假设前中序中均不含重复数字
 #include "utils.h"
 template<typename T>
 class Pro6

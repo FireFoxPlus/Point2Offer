@@ -10,6 +10,13 @@ using namespace std;
 
 int main()
 {
-  Pro47 obp;
-  cout<<obp.doAdd(100 , 5);
+    int vas[] = {5 , 7 , 2 , 4 , 9};
+    for(int i = 0; i < 5; i++)
+        for(int j = 0; j < 5 - i - 1; j++)
+            if(vas[j] < vas[j + 1])
+            {
+                int tmp = vas[j];
+                vas[j + 1] = vas[j];
+                vas[j] = tmp;
+            }
 }

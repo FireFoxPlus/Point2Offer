@@ -1,3 +1,4 @@
+//用两个栈实现队列
 #include "utils.h"
 template<typename T>
 class Pro7
@@ -30,7 +31,7 @@ T Pro7<T>::deleteHead()
     }
     else
     {
-        cout<<"����Ϊ��";
+        cout<<"╤сапн╙©у";
         return -1;
     }
     return rs;

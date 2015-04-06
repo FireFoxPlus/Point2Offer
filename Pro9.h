@@ -1,3 +1,4 @@
+//·Æ²¨ÄÇÇÐÊýÁÐ
 class Pro9
 {
 public :

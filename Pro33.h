@@ -1,3 +1,6 @@
+//Pro32:1到n的整数中，1出现的次数
+//把数组排成最小的数
+//输入一个正整数数组，把整数里所有数字拼接成一个数，输出所能拼接得到的最小数
 bool Compare(int val1 , int val2);
 void tailCopy(char*rs , int val);
 

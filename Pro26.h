@@ -1,3 +1,6 @@
+//复杂链表的复制
+//复制一个复杂链表，在复杂链表中，每个节点除了有一个指向next的指针外，
+//还有指向链表中任意节点（或者为NULL）的sibling指针
 #include "Complex_list.h"
 
 template<typename T>

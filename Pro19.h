@@ -1,3 +1,5 @@
+//二叉树的镜像
+//输入二叉树，输出该二叉树的镜像
 #include "utils.h"
 template<typename T>
 class Pro19
