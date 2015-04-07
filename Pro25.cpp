@@ -50,3 +50,10 @@ void Pro25::PrintSumPath(bnode<int> *root , int sum)
         }
     }
 }
+
+void Pro25::printPath(bnode<int> *root , int sum)
+{
+
+
+
+}
