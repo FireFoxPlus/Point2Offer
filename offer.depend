@@ -199,7 +199,7 @@
 	<iostream>
 	<stdio.h>
 
-1428385803 source:e:\point2offer_l\point2offer\main.cpp
+1428410270 source:e:\point2offer_l\point2offer\main.cpp
 	<iostream>
 	<cstring>
 	<memory>
@@ -210,15 +210,19 @@
 	"Pro14.h"
 	"Pro17.h"
 	"Pro18.h"
+	"Pro20.h"
+	"Pro21.h"
+	"Pro22.h"
+	"Pro24.h"
 	<vector>
 
 1422842610 e:\point2offer_l\point2offer\pro23.h
 	"utils.h"
 
-1425626216 source:e:\point2offer_l\point2offer\pro24.cpp
+1428410216 source:e:\point2offer_l\point2offer\pro24.cpp
 	"Pro24.h"
 
-1428364517 e:\point2offer_l\point2offer\pro24.h
+1428409659 e:\point2offer_l\point2offer\pro24.h
 
 1425626216 source:e:\point2offer_l\point2offer\pro25.cpp
 	"Pro25.h"
@@ -570,5 +574,22 @@
 
 1428385983 e:\point2offer_l\point2offer\pro18.h
 	<queue>
+	"utils.h"
+
+1428399009 e:\point2offer_l\point2offer\pro20.h
+	<iostream>
+
+1428403858 source:e:\point2offer_l\point2offer\pro21.cpp
+	"Pro21.h"
+
+1428403811 e:\point2offer_l\point2offer\pro21.h
+	"utils.h"
+	<stack>
+
+1428408147 source:e:\point2offer_l\point2offer\pro22.cpp
+	"Pro22.h"
+	<stack>
+
+1428407779 e:\point2offer_l\point2offer\pro22.h
 	"utils.h"
 

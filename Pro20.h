@@ -6,6 +6,8 @@ template<int n>
 class Pro20
 {
 public :
+    Pro20()
+    {}
     Pro20(int (*p)[n])
     {
         Uheight = 0;
@@ -15,6 +17,7 @@ public :
         value = p;
     }
     void output();
+    void printMatrix(int (*matrix)[n] , int height , int width);
 private :
     int (*value)[n];
     int Uheight , Dheight;
@@ -63,5 +66,46 @@ void Pro20<n>::output()
         }
         CH += 1;
         Lwidth++;
+    }
+}
+
+template<int n>
+void Pro20<n>::printMatrix(int (*matrix)[n] , int height , int width)
+{
+    int upLine = 0 , downLine = height - 1,
+        leftCol = 0 , rightCol = width - 1;
+    for(int j = 0; j < height *  width;)
+    {
+        if(upLine == downLine && leftCol == rightCol)
+        {
+            cout<<matrix[upLine][rightCol]<<" ";
+            j++;
+        }
+        for(int i = leftCol; i < rightCol; i++)
+        {
+            cout<<matrix[upLine][i]<<" ";
+            j++;
+        }
+
+        for(int i = upLine; i < downLine; i++)
+        {
+            cout<<matrix[i][rightCol]<<" ";
+            j++;
+        }
+        for(int i = rightCol; i > leftCol; i--)
+        {
+            cout<<matrix[downLine][i]<<" ";
+            j++;
+        }
+
+        for(int i = downLine; i > upLine; i--)
+        {
+            cout<<matrix[i][leftCol]<<" ";
+            j++;
+        }
+        upLine++;
+        downLine--;
+        leftCol++;
+        rightCol--;
     }
 }

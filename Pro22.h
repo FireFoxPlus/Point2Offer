@@ -1,6 +1,10 @@
 //栈的压入、弹出序列
-//题目：输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否为该栈的弹出顺序。
+//题目：输入两个整数序列，第一个序列表示栈的压入顺序，
+//请判断第二个序列是否为该栈的弹出顺序。
+#ifndef UTILS_H
 #include "utils.h"
+#endif // UTILS_H
+
 template<typename T>
 class Pro22
 {
@@ -46,3 +50,9 @@ bool Pro22<T>::judge(T *oriseq , T * popseq , int length)
     }
     return rs;
 }
+
+class Pro22_2
+{
+public :
+   bool isRightOrder(char *ori , char *pop);
+};

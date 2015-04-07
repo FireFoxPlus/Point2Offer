@@ -1,6 +1,11 @@
 //包含min函数的栈
 //定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的min函数
+#ifndef UTILS_H
 #include "utils.h"
+#endif // UTILS_H
+#include <stack>
+using namespace std;
+
 template<typename T>
 class Pro21
 {
@@ -42,3 +47,17 @@ T Pro21<T>::mins()
 {
     return minvalue.top();
 }
+
+
+class Pro21_2
+{
+public :
+    void push(int val);
+    int top();
+    int pop();
+    int getMin();
+private :
+    stack<int> value;
+    stack<int> mins;
+
+};

@@ -40,3 +40,18 @@ bool Pro24::judgeSort(int *values , int length)
     else
         return judgeSort(values , rightStart) && judgeSort(values + rightStart , length - rightStart - 1);
 }
+
+bool Pro24_2::isSortTree(char *order , int len)
+{
+    if(len <= 0)
+        return true;
+    int root = order[len - 1] - '0';
+    int left , right;
+    for(left = 0; order[left] - '0' < root; left++)
+        ;
+    for(right = left; order[right] - '0' > root; right++)
+        ;
+    if(order[right] - '0' != root)
+        return false;
+    return isSortTree(order , left) && isSortTree(order +  left, len - left - 1);
+}
