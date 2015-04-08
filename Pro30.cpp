@@ -71,3 +71,41 @@ void Pro30::SortContain(int *vals , int lens)
         cur--;
     }
 }
+
+void Pro30_2::heapAjust(int *vals , int poi , int n)
+{
+    if(vals == NULL)
+        return;
+    int child;
+    for(; poi * 2 + 1 < n; poi = child)
+    {
+        child = poi * 2 + 1;
+        if((child < n - 1) && vals[child] > vals[child + 1])
+            child++;
+        if(vals[child] < vals[poi])
+        {
+            vals[child] += vals[poi];
+            vals[poi] = vals[child] - vals[poi];
+            vals[child] = vals[child] - vals[poi];
+        }
+        else
+            break;
+    }
+}
+
+void Pro30_2::foundMinK(int *vals , int k , int len)
+{
+    for(int i = k / 2 + 1; i >= 0; i--)
+        heapAjust(vals , i , len);
+
+    for(int i = 0; i < k; i++)
+    {
+        cout<<vals[0]<<" ";
+        vals[0] += vals[0] + vals[len - 1 - i];
+        vals[len - 1 - i] = vals[0] - vals[len - 1 - i];
+        vals[0] = vals[0] - vals[len - 1 - i];
+        heapAjust(vals , 0 , len - i - 1);
+    }
+
+
+}

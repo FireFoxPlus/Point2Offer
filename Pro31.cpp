@@ -1,4 +1,7 @@
 #include "Pro31.h"
+#include <iostream>
+
+using namespace std;
 
 int Pro31::MaxSub(int *values , int length)
 {
@@ -36,6 +39,22 @@ int Pro31::MaxInN(int *values , int length , int cur)
         tmp = MaxSub_2(values , length , i);
         if(tmp > maxs)
             maxs = tmp;
+    }
+    return maxs;
+}
+
+int Pro31_2::maxSum(int* vals , int len)
+{
+    int sum = 0 , maxs =  (1 << 31);
+    for(int i = 0; i < len; i++)
+    {
+        sum += vals[i];
+        if(sum < 0)
+            sum = 0;
+        if(sum > maxs)
+        {
+            maxs = sum;
+        }
     }
     return maxs;
 }

@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    Pro29_2 ob;
-    int vals[] = {1 , 2 , 2 ,2 , 2 ,5 ,1};
-    cout<<ob.MoreThanHalf(vals , 7);
+    Pro33_2 ob;
+    int val[] = {1 , 31 , 1};
+    ob.getCatMin(val , 3);
 }

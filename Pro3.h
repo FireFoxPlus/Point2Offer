@@ -41,5 +41,5 @@ bool Pro3<n>::mfind(int target)
 class Pro3_2
 {
 public :
-    bool findInMatrix(int val[][] , int height , int width);
+    bool findInMatrix(int (*val)[4] , int height , int width , int target);
 };

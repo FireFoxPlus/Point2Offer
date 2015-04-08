@@ -1,3 +1,5 @@
+#define PRE_INCLUDE_H
+
 #include <iostream>
 #include <cstring>
 #include <memory>
@@ -21,4 +23,7 @@
 #include "Pro28.h"
 #include "Pro29.h"
 #include "Pro3.h"
+#include "Pro30.h"
+#include "Pro31.h"
+#include "Pro33.h"
 #include <vector>

@@ -4,6 +4,7 @@
 #endif // UTILS_H
 #include <cstring>
 #include <algorithm>
+#include <math.h>
 
 void Pro33::getMinInArray(int *values , int length , int cur , char *rs)
 {
@@ -93,3 +94,31 @@ void Pro33::getMinsInArray_2(int *values , int length)
     }
     mins = arrayToInt(rs);
 }
+
+int Pro33_2::getLength(int num)
+{
+    int rs = 0;
+    while(num != 0)
+    {
+        rs++;
+        num /= 10;
+    }
+    return rs;
+}
+
+bool NewCompare(int val1 , int val2)
+{
+    int len1 = Pro33_2::getLength(val1) , len2 = Pro33_2::getLength(val2);
+    int rs1 = val1 * pow(10 , len2) + val2;
+    int rs2 = val2 * pow(10 , len1) + val1;
+    return rs1 < rs2;
+}
+
+void  Pro33_2::getCatMin(int *vals , int len)
+{
+    sort(vals , vals + len , NewCompare);
+    for(int i = 0; i < len; i++)
+        cout<<vals[i];
+}
+
+

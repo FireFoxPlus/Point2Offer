@@ -16,3 +16,10 @@ private :
     int *values;
     int length;
 };
+
+class Pro30_2
+{
+public :
+    void foundMinK(int *vals , int k , int len);
+    void heapAjust(int *vals , int poi , int n);
+};

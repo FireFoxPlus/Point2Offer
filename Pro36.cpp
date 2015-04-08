@@ -57,3 +57,11 @@ int Pro36::getDsc(int *values , int length)
     int mergeCount = mmerge(values , length / 2 , values + length / 2 , length - length / 2) + leftCount + rightCount;
     return mergeCount;
 }
+
+int Pro36_2::getDsc(int *vals , int len)
+{
+    if(vals == NULL || len <= 0)
+        return 0;
+
+
+}

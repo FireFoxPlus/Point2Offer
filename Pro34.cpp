@@ -3,6 +3,7 @@
 #ifndef UTILS_H
 #include "utils.h"
 #endif // UTILS_H
+#include <queue>
 using namespace std;
 
 int Pro34::mutiplyN(int *startPoi , int counts , int n , int *nums , int nowMax)
