@@ -16,3 +16,9 @@ private :
     int *values;
     int length;
 };
+
+class Pro29_2
+{
+public :
+    int MoreThanHalf(int *vals , int len);
+};

@@ -1,5 +1,5 @@
 #include "Pro25.h"
-
+using namespace std;
 void Pro25::PrintSumPath(bnode<int> *root , int sum)
 {
     bnode<int> *visits[100];//访问数组
@@ -51,9 +51,44 @@ void Pro25::PrintSumPath(bnode<int> *root , int sum)
     }
 }
 
+void Pro25::printPath(bnode<int> *root , int sum , stack<bnode<int>*> &paths)
+{
+    if(root == NULL)
+        return;
+    if(root->getValue() == sum)
+        printSTLStack(paths);
+    paths.push(root);
+    printPath(root->getLeft() , sum - root->getValue() , paths);
+    printPath(root->getRight() , sum - root->getValue() , paths);
+    paths.pop();
+}
+
 void Pro25::printPath(bnode<int> *root , int sum)
 {
+    if(root == NULL)
+        return;
+    stack<bnode<int>*> paths;
+    paths.push(root);
+    printPath(root->getLeft() , sum - root->getValue() , paths);
+    printPath(root->getRight() , sum - root->getValue() , paths);
+    paths.pop();
+}
+void printSTLStack(stack<bnode<int>*> &paths)
+{
+    stack<bnode<int>*> help;
+    while(!paths.empty())
+    {
+        bnode<int> *tmp = paths.top();
+        cout<<tmp->getValue()<<" ";
+        help.push(tmp);
+        paths.pop();
+    }
+    cout<<endl;
 
-
-
+    while(!help.empty())
+    {
+        bnode<int>* tmp = help.top();
+        paths.push(tmp);
+        help.pop();
+    }
 }

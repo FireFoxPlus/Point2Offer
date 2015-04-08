@@ -24,3 +24,9 @@ public :
 private :
     char *values;
 };
+
+class Pro28_2
+{
+public :
+    void Allout(char *str , int startPoi);
+};

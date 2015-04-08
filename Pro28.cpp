@@ -22,3 +22,22 @@ void Pro28::Allout(char *cur)
         i++;
     }
 }
+
+void Pro28_2::Allout(char *str , int startPoi)
+{
+    if(str[startPoi + 1] == '\0')
+        cout<<str<<endl;
+    for(int i = startPoi; i < strlen(str); i++)
+    {
+        char tmp = str[startPoi];
+        str[startPoi] = str[i];
+        str[i] = tmp;
+
+        Allout(str , startPoi + 1);
+
+        tmp = str[startPoi];
+        str[startPoi] = str[i];
+        str[i] = tmp;
+    }
+
+}

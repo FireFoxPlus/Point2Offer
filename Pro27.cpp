@@ -69,3 +69,28 @@ void Pro27::ConvertNode(bnode<int> *root , bnode<int> **lastNodeInList)
         ConvertNode(root->getRight() , lastNodeInList);
 }
 
+void Pro27_2::tree2List(bnode<int> *root)
+{
+    if(root == NULL)
+        return;
+    bnode<int>* tail = NULL;
+
+    midTour(root->getLeft() , &tail);
+    root->setLeft(tail);
+    if(tail != NULL)
+        tail->setRight(root);
+    tail = root;
+    midTour(root->getRight() , &tail);
+}
+
+void Pro27_2::midTour(bnode<int>*root , bnode<int> **tail)
+{
+    if(root == NULL)
+        return;
+    midTour(root->getLeft() , tail);
+    root->setLeft(*tail);
+    if(*tail != NULL)
+        (*tail)->setRight(root);
+    *tail = root;
+    midTour(root->getRight() , tail);
+}

@@ -33,3 +33,31 @@ int Pro29::MoreThanHalf_2(int* value , int length_ , int goal)
         rs = MoreThanHalf_2(value + part + 1 , length_ - part - 1 , goal - part - 1);
     return rs;
 }
+
+int Pro29_2::MoreThanHalf(int *vals , int len)
+{
+    if(vals == NULL)
+        return 0;
+    int counts = 0 , num;
+    for(int i = 0; i < len; i++)
+    {
+        if(i == 0)
+        {
+            counts = 1;
+            num = vals[i];
+            continue;
+        }
+        if(vals[i] == num)
+            counts++;
+        else
+        {
+            counts--;
+            if(counts < 0)
+            {
+                counts = 0;
+                num = vals[i];
+            }
+        }
+    }
+    return num;
+}

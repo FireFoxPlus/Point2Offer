@@ -199,22 +199,8 @@
 	<iostream>
 	<stdio.h>
 
-1428410270 source:e:\point2offer_l\point2offer\main.cpp
-	<iostream>
-	<cstring>
-	<memory>
-	"utils.h"
-	"Pro47.h"
-	"Pro11.h"
-	"Pro12.h"
-	"Pro14.h"
-	"Pro17.h"
-	"Pro18.h"
-	"Pro20.h"
-	"Pro21.h"
-	"Pro22.h"
-	"Pro24.h"
-	<vector>
+1428470895 source:e:\point2offer_l\point2offer\main.cpp
+	"preInclude.h"
 
 1422842610 e:\point2offer_l\point2offer\pro23.h
 	"utils.h"
@@ -224,21 +210,22 @@
 
 1428409659 e:\point2offer_l\point2offer\pro24.h
 
-1425626216 source:e:\point2offer_l\point2offer\pro25.cpp
+1428453271 source:e:\point2offer_l\point2offer\pro25.cpp
 	"Pro25.h"
 
-1428364517 e:\point2offer_l\point2offer\pro25.h
+1428452591 e:\point2offer_l\point2offer\pro25.h
 	"utils.h"
+	<stack>
 
 1423037940 e:\point2offer_l\point2offer\flashbackstack.h
 
 1423464782 e:\point2offer_l\point2offer\pro26.h
 	"Complex_list.h"
 
-1425626216 source:e:\point2offer_l\point2offer\pro27.cpp
+1428468745 source:e:\point2offer_l\point2offer\pro27.cpp
 	"Pro27.h"
 
-1428364517 e:\point2offer_l\point2offer\pro27.h
+1428468714 e:\point2offer_l\point2offer\pro27.h
 	"utils.h"
 
 1423462687 e:\point2offer_l\point2offer\complex_list.h
@@ -461,19 +448,19 @@
 
 1428364517 e:\point2offer_l\point2offer\pro47.h
 
-1425626216 source:e:\point2offer_l\point2offer\pro28.cpp
+1428470395 source:e:\point2offer_l\point2offer\pro28.cpp
 	"Pro28.h"
 	<iostream>
 
-1428364517 e:\point2offer_l\point2offer\pro28.h
+1428469373 e:\point2offer_l\point2offer\pro28.h
 	<cstring>
 
-1425626216 source:e:\point2offer_l\point2offer\pro29.cpp
+1428470913 source:e:\point2offer_l\point2offer\pro29.cpp
 	"Pro29.h"
 	"fastSort.h"
 	<iostream>
 
-1428364517 e:\point2offer_l\point2offer\pro29.h
+1428470480 e:\point2offer_l\point2offer\pro29.h
 
 1425626216 source:e:\point2offer_l\point2offer\pro30.cpp
 	"Pro30.h"
@@ -592,4 +579,25 @@
 
 1428407779 e:\point2offer_l\point2offer\pro22.h
 	"utils.h"
+
+1428470545 e:\point2offer_l\point2offer\preinclude.h
+	<iostream>
+	<cstring>
+	<memory>
+	"utils.h"
+	"Pro47.h"
+	"Pro11.h"
+	"Pro12.h"
+	"Pro14.h"
+	"Pro17.h"
+	"Pro18.h"
+	"Pro20.h"
+	"Pro21.h"
+	"Pro22.h"
+	"Pro24.h"
+	"Pro25.h"
+	"Pro27.h"
+	"Pro28.h"
+	"Pro29.h"
+	<vector>
 
