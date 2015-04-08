@@ -113,6 +113,7 @@
 		<Unit filename="fastSort.cpp" />
 		<Unit filename="fastSort.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="mergeSort.cpp" />
 		<Unit filename="preInclude.h" />
 		<Unit filename="tmp.cpp" />
 		<Unit filename="utils.cpp" />

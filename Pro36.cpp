@@ -1,5 +1,6 @@
 #include "Pro36.h"
-
+#include <iostream>
+using namespace std;
 int Pro36::mmerge(int *val1 , int len1 , int *val2 , int len2)
 {
     int rs = 0;

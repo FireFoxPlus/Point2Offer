@@ -1,9 +1,12 @@
 #include "preInclude.h"
 using namespace std;
 
+void merges(int * vals , int start , int mid , int high);
+void mergeSort(int* vals , int low , int high);
 int main()
 {
-    Pro33_2 ob;
-    int val[] = {1 , 31 , 1};
-    ob.getCatMin(val , 3);
+    int vals[] = {2 , 6 , 8 , 3 , 1 ,9 };
+    mergeSort(vals , 0 , 5);
+    for(int i = 0; i < 6; i++)
+        cout<<vals[i]<<" ";
 }
