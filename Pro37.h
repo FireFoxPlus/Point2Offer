@@ -54,3 +54,10 @@ snode<T> *Pro37<T>::findFirstCommon(snode<T> *head1 , snode<T> *head2)
     return tmp1;
 }
 
+class Pro37_2
+{
+public :
+    snode<int> *getFirstCommon(snode<int>* head1 , snode<int>* head2);
+    int getLen(snode<int> *head);
+};
+

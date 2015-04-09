@@ -1,5 +1,7 @@
 #include "Pro36.h"
 #include <iostream>
+#include "stdlib.h"
+#include <cstring>
 using namespace std;
 int Pro36::mmerge(int *val1 , int len1 , int *val2 , int len2)
 {
@@ -59,10 +61,57 @@ int Pro36::getDsc(int *values , int length)
     return mergeCount;
 }
 
+int Pro36_2::mergeSort(int *vals , int start , int ends)
+{
+    int rs = 0;
+    if(ends - start > 0)
+    {
+        int mid = (ends + start) / 2;
+        rs += mergeSort(vals , start , mid);
+        rs += mergeSort(vals , mid + 1 , ends);
+        rs += merges(vals , start , mid , ends);
+    }
+    return rs;
+}
+
+int Pro36_2::merges(int *vals , int start , int mid , int ends)
+{
+    int rs = 0;
+    int *help = new int[ends - start + 1];
+    memcpy(help , vals + start , sizeof(int) * (ends - start + 1));
+
+    int firS =  start , secS = mid + 1;
+    int counts = start;
+    while(firS < mid + 1 && secS <= ends)
+    {
+        if(help[firS - start] < help[secS - start])
+        {
+            vals[counts] = help[firS - start];
+            counts++;
+            firS++;
+        }
+        else
+        {
+            vals[counts] = help[secS - start];
+            counts++;
+            secS++;
+            rs += mid - firS + 1;
+        }
+    }
+        while(firS < mid + 1)
+        {
+            vals[counts] = help[firS - start];
+            counts++;
+            firS++;
+        }
+
+    return rs;
+}
+
 int Pro36_2::getDsc(int *vals , int len)
 {
     if(vals == NULL || len <= 0)
         return 0;
-
-
+    int rs = mergeSort(vals , 0 , len - 1);
+    return rs;
 }

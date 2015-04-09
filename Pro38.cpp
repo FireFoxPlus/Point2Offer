@@ -38,3 +38,65 @@ int Pro38::getLast(int *values , int length , int target)
     }
     return start;
 }
+
+int Pro38_2::getFirst(int *vals , int len , int target)
+{
+    if(vals == NULL)
+        return -1;
+    int low = 0;
+    int high = len - 1;
+    int mid = (low + high) / 2;
+
+    while(low < high)
+    {
+        if(vals[mid] >= target)
+        {
+            high = mid - 1;
+            mid = (low + high) / 2;
+        }
+        else if(vals[mid] < target)
+        {
+            low = mid + 1;
+            mid = (low + high) / 2;
+        }
+    }
+    if(vals[low] == target)
+        return low - 1;
+    return low;
+}
+
+int Pro38_2::getLast(int *vals , int len , int target)
+{
+    if(vals == NULL)
+        return -1;
+    int low = 0;
+    int high = len - 1;
+    int mid = (low + high) / 2;
+
+    while(low < high)
+    {
+        if(vals[mid] > target)
+        {
+            high = mid - 1;
+            mid = (low + high) / 2;
+        }
+
+        else if(vals[mid] <= target)
+        {
+            low = mid + 1;
+            mid = (low + high) / 2;
+        }
+    }
+    if(vals[low] == target)
+        return low + 1;
+    return low;
+}
+
+int Pro38_2::getTimes(int *vals , int len , int target)
+{
+    int firIndex = getFirst(vals , len , target);
+    int lastIndex =  getLast(vals , len , target);
+    if(firIndex == lastIndex)
+        return 1;
+    return lastIndex - firIndex - 1;
+}

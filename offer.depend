@@ -156,7 +156,7 @@
 1428372463 e:\point2offer_l\point2offer\pro12.h
 	"utils.h"
 
-1425626216 e:\point2offer_l\point2offer\utils.h
+1428560338 e:\point2offer_l\point2offer\utils.h
 	<iostream>
 	<cstring>
 
@@ -199,7 +199,7 @@
 	<iostream>
 	<stdio.h>
 
-1428497208 source:e:\point2offer_l\point2offer\main.cpp
+1428570074 source:e:\point2offer_l\point2offer\main.cpp
 	"preInclude.h"
 
 1422842610 e:\point2offer_l\point2offer\pro23.h
@@ -499,30 +499,33 @@
 
 1428364517 e:\point2offer_l\point2offer\pro35.h
 
-1428496246 source:e:\point2offer_l\point2offer\pro36.cpp
+1428541254 source:e:\point2offer_l\point2offer\pro36.cpp
 	"Pro36.h"
 	<iostream>
+	"stdlib.h"
+	<cstring>
 
-1428493431 e:\point2offer_l\point2offer\pro36.h
+1428539094 e:\point2offer_l\point2offer\pro36.h
 
-1425626216 source:e:\point2offer_l\point2offer\pro38.cpp
+1428547989 source:e:\point2offer_l\point2offer\pro38.cpp
 	"Pro38.h"
 	<iostream>
 
-1428364517 e:\point2offer_l\point2offer\pro38.h
+1428543618 e:\point2offer_l\point2offer\pro38.h
 
-1425626216 source:e:\point2offer_l\point2offer\pro40.cpp
+1428566328 source:e:\point2offer_l\point2offer\pro40.cpp
 	"Pro40.h"
 	<iostream>
 
-1428364517 e:\point2offer_l\point2offer\pro40.h
+1428560790 e:\point2offer_l\point2offer\pro40.h
 
-1425626216 source:e:\point2offer_l\point2offer\pro41.cpp
+1428570129 source:e:\point2offer_l\point2offer\pro41.cpp
 	"Pro41.h"
 	<iostream>
 	"utils.h"
+	<queue>
 
-1428364517 e:\point2offer_l\point2offer\pro41.h
+1428568691 e:\point2offer_l\point2offer\pro41.h
 
 1425626216 source:e:\point2offer_l\point2offer\pro42.cpp
 	"Pro42.h"
@@ -584,7 +587,7 @@
 1428407779 e:\point2offer_l\point2offer\pro22.h
 	"utils.h"
 
-1428484053 e:\point2offer_l\point2offer\preinclude.h
+1428569140 e:\point2offer_l\point2offer\preinclude.h
 	<iostream>
 	<cstring>
 	<memory>
@@ -607,6 +610,11 @@
 	"Pro30.h"
 	"Pro31.h"
 	"Pro33.h"
+	"Pro37.h"
+	"Pro38.h"
+	"Pro39.h"
+	"Pro40.h"
+	"Pro41.h"
 	<vector>
 
 1428473553 e:\point2offer_l\point2offer\pro3.h
@@ -614,8 +622,20 @@
 1428473565 source:e:\point2offer_l\point2offer\pro3.cpp
 	"preInclude.h"
 
-1428498031 source:e:\point2offer_l\point2offer\mergesort.cpp
+1428540724 source:e:\point2offer_l\point2offer\mergesort.cpp
 	<stdlib.h>
 	<cstring>
 	<iostream>
+
+1428542752 source:e:\point2offer_l\point2offer\pro37.cpp
+	"Pro37.h"
+
+1428542063 e:\point2offer_l\point2offer\pro37.h
+	"utils.h"
+
+1428559878 source:e:\point2offer_l\point2offer\pro39.cpp
+	"Pro39.h"
+
+1428559252 e:\point2offer_l\point2offer\pro39.h
+	"utils.h"
 

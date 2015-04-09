@@ -3,6 +3,7 @@
 #ifndef UTILS_H
 #include "utils.h"
 #endif // UTILS_H
+#include <queue>
 using namespace std;
 
 void Pro41::givenSum(int *values , int length , int sum)
@@ -70,5 +71,52 @@ void Pro41::seqSum(int sum)
             values.addQueue(i);
             i++;
         }
+    }
+}
+
+
+void Pro41_2::getSumInArray(int *vals , int len , int sum)
+{
+    int start = 0 , ends = len - 1;
+    while(start < ends)
+    {
+        if(vals[start] + vals[ends] == sum)
+        {
+            cout<<vals[start]<<" "<<vals[ends]<<endl;
+            start++;
+        }
+        else if(vals[start] + vals[ends] < sum)
+            start++;
+        else
+            ends--;
+    }
+}
+
+void printQueue(queue<int> rs)
+{
+    while(!rs.empty())
+    {
+        int tmp = rs.front();
+        cout<<tmp<<" ";
+        rs.pop();
+    }
+    cout<<endl;
+}
+
+void Pro41_2::getSum(int sum)
+{
+    queue<int> rs;
+    int tmpSum = 0;
+    for(int i = 1; i < sum; i++)
+    {
+        rs.push(i);
+        tmpSum += i;
+        while(tmpSum > sum)
+        {
+            tmpSum -= rs.front();
+            rs.pop();
+        }
+        if(tmpSum == sum)
+            printQueue(rs);
     }
 }

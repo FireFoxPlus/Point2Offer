@@ -45,6 +45,4 @@ void merges(int * vals , int start , int mid , int high)
         firStart++;
         counts++;
     }
-
-
 }

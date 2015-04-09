@@ -16,6 +16,11 @@ template<typename T>
 class snode
 {
 public :
+    snode(T val)
+    {
+        value = val;
+        next = NULL;
+    }
     snode()
     {
         next = NULL;
@@ -271,6 +276,12 @@ class bnode
 {
 //¶þ²æÊ÷½Úµã
 public :
+    bnode(T val)
+    {
+        left = NULL;
+        right = NULL;
+        value = val;
+    }
     bnode()
     {
         left = NULL;

@@ -1,4 +1,5 @@
-//�����������
+﻿//二叉树的深度
+//是否是平衡二叉树，即左右子树高度差不超过1
 #ifndef UTILS_H
 #include "utils.h"
 #endif // UTILS_H
@@ -90,4 +91,11 @@ bool Pro39<T>::balanceTree_2(bnode<T> *root , int *depth)
     }
     return false;
 }
+
+class  Pro39_2
+{
+public :
+    int getDepth(bnode<int> *root);
+    bool isBalance(bnode<int> *root , int *longPath);
+};
 

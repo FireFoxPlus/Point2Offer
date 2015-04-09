@@ -12,4 +12,6 @@ class Pro36_2
 {
 public :
     int getDsc(int* vals , int len);
+    int mergeSort(int *vals , int start , int ends);
+    int merges(int *val1 , int start , int mid , int ends);
 };
