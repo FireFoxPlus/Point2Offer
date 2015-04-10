@@ -1,6 +1,8 @@
 //重建二叉树
 //输入二叉树的前中序遍历，请重建出二叉树，假设前中序中均不含重复数字
+#ifndef UTILS_H
 #include "utils.h"
+#endif // UTILS_H
 template<typename T>
 class Pro6
 {
@@ -32,7 +34,7 @@ private :
 };
 
 template<typename T>
-Pro6<T>::Pro6(T *tpre , T * tmiddle , int tlength)、
+Pro6<T>::Pro6(T *tpre , T * tmiddle , int tlength)
 {
     pre = tpre;
     middle = tmiddle;
@@ -70,3 +72,10 @@ int Pro6<T>::finds(T *values , T target)
     }
     return n;
 }
+
+class Pro6_2
+{
+public :
+    bnode<int>* rebuildBTree(char *preS , char *preE , char *midS , char *midE);
+    int findRootInMid(char root , char *mid);
+};

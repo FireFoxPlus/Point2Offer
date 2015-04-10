@@ -54,3 +54,22 @@ int *Pro43::getPossi_2(int counts)
     }
     return vals[(flag + 1) % 2];
 }
+
+
+int Pro43_2::getPossi(int counts , int target , int nowSum)
+{
+    if(counts == 0)
+        return 0;
+    int rs = 0;
+
+    for(int i = 1; i < 7; i++)
+    {
+        if(nowSum + i == target && counts == 1)
+            rs++;
+        else if(nowSum + i < target)
+            rs += getPossi(counts - 1 , target , nowSum + i);
+        else
+            break;
+    }
+    return rs;
+}

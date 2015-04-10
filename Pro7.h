@@ -1,5 +1,11 @@
 //用两个栈实现队列
+#ifndef UTILS_H
 #include "utils.h"
+#endif // UTILS_H
+
+#include <stack>
+using namespace std;
+
 template<typename T>
 class Pro7
 {
@@ -36,3 +42,19 @@ T Pro7<T>::deleteHead()
     }
     return rs;
 }
+
+class Pro7_2
+{
+public :
+    Pro7_2()
+    {
+        sizes = 0;
+    }
+    void push(int);
+    void pop() throw(int);
+    int fronts()throw(int);
+private :
+    stack<int> in;
+    stack<int> out;
+    int sizes;
+};

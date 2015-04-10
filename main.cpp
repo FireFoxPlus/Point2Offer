@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int vals[] = {1 , 2 , 3 , 4 , 5 , 6};
-    Pro41_2 ob;
-    ob.getSum(10);
+    Pro8_2 ob;
+    int vals[] = {2 , 3 , 4 , 5 , 6};
+    cout<<ob.findMin(vals , 5);
 }

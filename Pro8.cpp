@@ -26,3 +26,30 @@ int Pro8::findMin(int *values , int length)
     }
     return values[startIndex];
 }
+
+int Pro8_2::findMin(int* vals , int len)
+{
+    //±¾ÉíÓĞĞò
+    if(vals[0] < vals[len - 1])
+        return vals[0];
+    int start = 0 , ends = len - 1 , mid = (start + ends) / 2;
+    while(start < ends)
+    {
+        if(vals[mid + 1] < vals[mid])
+            return vals[mid + 1];
+        if(vals[mid - 1] > vals[mid])
+            return vals[mid];
+        if(vals[mid] > vals[start])
+        {
+            start = mid + 1;
+            mid = (start + ends) / 2;
+
+        }
+        else
+        {
+            ends = mid  - 1;
+            mid  = (start + ends) / 2;
+        }
+    }
+    return vals[start];
+}

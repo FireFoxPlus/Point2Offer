@@ -1,4 +1,4 @@
-//·Æ²¨ÄÇÇÐÊýÁÐ
+ï»¿//è²æ³¢é‚£åˆ‡æ•°åˆ—
 class Pro9
 {
 public :

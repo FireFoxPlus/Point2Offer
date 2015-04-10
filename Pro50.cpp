@@ -37,3 +37,49 @@ bool Pro50::getPath(bnode<int> *root , bnode<int> *target , mstack<bnode<int> *>
         path->pop();
     return rs;
 }
+
+int Pro50::toInt(char *str)
+{
+    int sign = 1;
+    int rs = 0;
+    if(*str == '-')
+    {
+        sign = -1;
+        str++;
+    }
+    while(*str != '\0')
+    {
+        rs = rs * 10 + *str - '0';
+        str++;
+    }
+    return rs * sign;
+}
+
+bool Pro50::getPath(bnode<int> *root , bnode<int> *target ,
+                    stack<bnode<int> *> &paths)
+{
+    if(root == NULL)
+        return false;
+    if(root == target)
+    {
+        paths.push(target);
+        return true;
+    }
+    bool left , right;
+    paths.push(root);
+    left = getPath(root->getLeft() , target , paths);
+    right = getPath(root->getRight() , target , paths);
+    if(left || right)
+        return true;
+    else
+        paths.pop();
+    return false;
+}
+
+bnode<int> *Pro50::getFirstAnc(stack<bnode<int> *> &path1 , stack<bnode<int> *> &path2)
+{
+
+
+
+
+}

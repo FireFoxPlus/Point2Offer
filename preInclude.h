@@ -31,5 +31,10 @@
 #include "Pro39.h"
 #include "Pro40.h"
 #include "Pro41.h"
-
+#include "Pro43.h"
+#include "Pro44.h"
+#include  "Pro50.h"
+#include "Pro6.h"
+#include "Pro7.h"
+#include "Pro8.h"
 #include <vector>

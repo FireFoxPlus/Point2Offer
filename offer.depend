@@ -185,21 +185,21 @@
 
 1428364517 e:\point2offer_l\point2offer\pro4.h
 
-1425626216 source:e:\point2offer_l\point2offer\pro8.cpp
+1428657009 source:e:\point2offer_l\point2offer\pro8.cpp
 	"Pro8.h"
 
-1428364517 e:\point2offer_l\point2offer\pro8.h
+1428653881 e:\point2offer_l\point2offer\pro8.h
 
 1425626216 source:e:\point2offer_l\point2offer\pro9.cpp
 	"Pro9.h"
 
-1428364517 e:\point2offer_l\point2offer\pro9.h
+1428652535 e:\point2offer_l\point2offer\pro9.h
 
 1425626216 source:e:\point2offer_l\point2offer\tmp.cpp
 	<iostream>
 	<stdio.h>
 
-1428570074 source:e:\point2offer_l\point2offer\main.cpp
+1428654410 source:e:\point2offer_l\point2offer\main.cpp
 	"preInclude.h"
 
 1422842610 e:\point2offer_l\point2offer\pro23.h
@@ -533,19 +533,20 @@
 
 1428364517 e:\point2offer_l\point2offer\pro42.h
 
-1425626216 source:e:\point2offer_l\point2offer\pro43.cpp
+1428630223 source:e:\point2offer_l\point2offer\pro43.cpp
 	"Pro43.h"
 	<math.h>
 	<string.h>
 
-1428364517 e:\point2offer_l\point2offer\pro43.h
+1428629444 e:\point2offer_l\point2offer\pro43.h
 
-1425626216 source:e:\point2offer_l\point2offer\pro44.cpp
+1428632550 source:e:\point2offer_l\point2offer\pro44.cpp
 	"Pro44.h"
 	"fastSort.h"
 	<iostream>
+	<algorithm>
 
-1428364517 e:\point2offer_l\point2offer\pro44.h
+1428631488 e:\point2offer_l\point2offer\pro44.h
 
 1425626216 source:e:\point2offer_l\point2offer\pro46.cpp
 	"Pro46.h"
@@ -555,11 +556,12 @@
 1425626216 source:e:\point2offer_l\point2offer\pro47.cpp
 	"Pro47.h"
 
-1428364517 source:e:\point2offer_l\point2offer\pro50.cpp
+1428635115 source:e:\point2offer_l\point2offer\pro50.cpp
 	"Pro50.h"
 
-1428364517 e:\point2offer_l\point2offer\pro50.h
+1428635055 e:\point2offer_l\point2offer\pro50.h
 	"utils.h"
+	<stack>
 
 1425626216 source:e:\point2offer_l\point2offer\utils.cpp
 	"utils.h"
@@ -587,7 +589,7 @@
 1428407779 e:\point2offer_l\point2offer\pro22.h
 	"utils.h"
 
-1428569140 e:\point2offer_l\point2offer\preinclude.h
+1428654425 e:\point2offer_l\point2offer\preinclude.h
 	<iostream>
 	<cstring>
 	<memory>
@@ -615,6 +617,12 @@
 	"Pro39.h"
 	"Pro40.h"
 	"Pro41.h"
+	"Pro43.h"
+	"Pro44.h"
+	"Pro50.h"
+	"Pro6.h"
+	"Pro7.h"
+	"Pro8.h"
 	<vector>
 
 1428473553 e:\point2offer_l\point2offer\pro3.h
@@ -638,4 +646,17 @@
 
 1428559252 e:\point2offer_l\point2offer\pro39.h
 	"utils.h"
+
+1428650874 e:\point2offer_l\point2offer\pro6.h
+	"utils.h"
+
+1428650582 source:e:\point2offer_l\point2offer\pro6.cpp
+	"Pro6.h"
+
+1428652481 source:e:\point2offer_l\point2offer\pro7.cpp
+	"Pro7.h"
+
+1428652163 e:\point2offer_l\point2offer\pro7.h
+	"utils.h"
+	<stack>
 
