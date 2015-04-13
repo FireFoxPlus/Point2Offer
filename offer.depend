@@ -199,8 +199,10 @@
 	<iostream>
 	<stdio.h>
 
-1428654410 source:e:\point2offer_l\point2offer\main.cpp
+1428887728 source:e:\point2offer_l\point2offer\main.cpp
 	"preInclude.h"
+	<vector>
+	<algorithm>
 
 1422842610 e:\point2offer_l\point2offer\pro23.h
 	"utils.h"
@@ -589,7 +591,7 @@
 1428407779 e:\point2offer_l\point2offer\pro22.h
 	"utils.h"
 
-1428654425 e:\point2offer_l\point2offer\preinclude.h
+1428816742 e:\point2offer_l\point2offer\preinclude.h
 	<iostream>
 	<cstring>
 	<memory>
